@@ -4,7 +4,8 @@ import java.util.*;
 
 
 public class dictionarySegmentation {
-
+    // This class do Chinese Segmentation use dictionary
+	
 	int LengthOfDict = 204440;  // the dict have 204440 words
 	String [] dict = new String [LengthOfDict]; // dictionary is a String List
 	String fileInputAddress = "c:/dictNew.txt"; // the address for our dictionary
@@ -41,7 +42,7 @@ public class dictionarySegmentation {
 				start += 1;
 			}
 		}
-		for ( i = count-1 ; i>=0 ; i-- ) {
+		for ( i = count-1 ; i>=0 ; i-- ) { // from back to front
 			str.insert(index[i], ' '); // use whitespace to distinguish
 		}
 		//System.out.println(str);
